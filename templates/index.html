@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Rating</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Coffee Rating</h1>
+    <p class="sub">Vote for your favourite brew. <span id="total">0</span> votes so far.</p>
+  </header>
+  <div id="error" role="alert"></div>
+  <ol id="list" aria-live="polite"></ol>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
